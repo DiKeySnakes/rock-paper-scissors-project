@@ -1,48 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   background-color: #1b1b32;
+  font-family: 'Roboto Mono', monospace;
 }
-.container {
-  margin: 120px auto;
+
+h1,
+h4,
+span {
+  text-shadow: 0 0 0.3rem red;
+}
+
+#main-container {
+  margin-top: 2rem;
   background-color: hsla(40, 45%, 62%, 1);
-  border-radius: 20px;
-  padding: 25px 50px;
-  width: 80vw;
+  border-radius: 1.2rem;
+  padding: 1rem 2rem;
+  width: 60vw;
 }
+
 .action {
-  max-width: 800px;
-  padding: 40px 0;
+  max-width: 50rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .options {
   flex: 1 1 30%;
   border-radius: 50%;
-  border-width: 4px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  border: 0.25rem solid rgba(0, 0, 0, 0.7);
+  padding: 0.6rem;
   animation-name: anim-fade;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   width: 100%;
-  max-width: 120px;
+  max-width: 7.5rem;
 }
+
 .display-moves {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-.move {
-  border-radius: 50%;
-  border-width: 4px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.7);
-}
+
 .separator {
-  font-size: 5em;
+  font-size: 3rem;
+  text-shadow: 0 0 0.3rem red;
+}
+
+#footer {
+  font-size: 0.8rem;
+  padding-top: 7rem;
+  text-align: center;
+  color: #c7c7c7;
+  text-shadow: 0 0 0.3rem black;
+}
+
+a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c7c7c7;
+}
+
+#icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+#icon:hover {
+  transform: rotate(360deg) scale(1.2);
 }

@@ -5,32 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <script
+      src="https://kit.fontawesome.com/63a987d3b1.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="rpsScript.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Rock Paper Scissors</h1>
-      <h2>Win five rounds</h2>
-      <h2 id="result">Choose your weapon</h2>
-      <h2>
-        Player <span id="p-score">0</span> - <span id="c-score">0</span> Computer
-      </h2>
-      <div class="display-moves">
-        <div class="move">
-          <img id="p-move" src="./images/Rock.svg">
+    <div class="container-fluid">
+      <div id="main-container" class="container">
+        <div id="title">
+          <h1>Rock Paper Scissors</h1>
+          <h4>Win five rounds</h4>
         </div>
-        <div class="separator">VS</div>
-        <div class="move">
-          <img id="c-move" src="./images/Rock.svg">
+        <h2 id="result">Choose your weapon</h2>
+        <h2>
+          Player <span id="p-score">0</span> -
+          <span id="c-score">0</span> Computer
+        </h2>
+        <div class="display-moves">
+          <div class="move">
+            <img id="p-move" src="./images/Rock.svg" alt="rock" />
+          </div>
+          <div class="separator">versus</div>
+          <div class="move">
+            <img id="c-move" src="./images/Rock.svg" alt="rock" />
+          </div>
+        </div>
+        <h2>Click on the image below</h2>
+        <div class="action">
+          <input
+            class="options"
+            type="image"
+            src="./images/Rock.svg"
+            alt="rock"
+            name="Rock" />
+          <input
+            class="options"
+            type="image"
+            src="./images/Paper.svg"
+            alt="paper"
+            name="Paper" />
+          <input
+            class="options"
+            type="image"
+            src="./images/Scissors.svg"
+            alt="scissors"
+            name="Scissors" />
         </div>
       </div>
-      <h2>Click on the image below<h2>
-      <div class="action">
-        <input class="options" type="image" src="./images/Rock.svg" value="Rock" />
-        <input class="options" type="image" src="./images/Paper.svg" value="Paper" />
-        <input class="options" type="image" src="./images/Scissors.svg" value="Scissors" />
+      <div id="footer" class="container">
+        <footer>
+          <p>
+            Created by DiKeySnakes for
+            <a href="https://theodinproject.com/" target="_blank"
+              >The Odin Project</a
+            >
+            curriculum
+          </p>
+          <p>
+            Copyright &copy; DiKeySnakes 2022
+            <a
+              href="https://github.com/DiKeySnakes/rock-paper-scissors-project"
+              target="_blank"
+              ><i id="icon" class="fa-brands fa-github"></i
+            ></a>
+          </p>
+        </footer>
       </div>
     </div>
-    <script src="rpsScript.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@ let result = '';
 
 options.forEach((option) => {
   option.addEventListener('click', function () {
-    const playerSelection = this.value;
+    const playerSelection = this.name;
 
     const computerOptions = ['Rock', 'Paper', 'Scissors'];
     const computerSelection = computerOptions[Math.floor(Math.random() * 3)];
